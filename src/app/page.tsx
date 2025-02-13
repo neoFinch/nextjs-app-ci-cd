@@ -20,7 +20,7 @@ export default async function Home() {
     <div className=" min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <h1 className="text-4xl font-bold mb-4">Pokemons</h1>
       {
-        data.results.map((pokemon) => (
+        data.results.map((pokemon: { name: string }) => (
           <div key={pokemon.name} className="flex flex-col gap-4">
             <div>{pokemon.name}</div>
           </div>
